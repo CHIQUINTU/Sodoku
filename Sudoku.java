@@ -14,35 +14,33 @@ public class Sudoku {
     
     public void printsudoku(){
 
-        //System.out.println("*---*---*---*");
+    System.out.println("*---*---*---*");
+    //System.out.print("|");
+   
         //System.out.print("|");
         // System.out.print(""+felder[0][0]+felder[1][0]+felder[2][0]);//x Zeilen und y Spalten
 
         for (int y=0; y<felder.length;y++){
-            for (int x=0; x<felder.length;x++){
+            System.out.print("|");// erst mal lauft die aussere schleife y 
+            for (int x=0; x<felder.length;x++){// druck eine zeile
                 if(felder[x][y]==0){
                     System.out.print(" ");
                 }  else {
-                    System.out.print(felder[x][y]);
+                    System.out.print(felder[x][y]);// Zahl
                 }     
                 if(x%3==2){
                     System.out.print("|");
-                }               
+                }  
             }        
             
             System.out.println("");
             if(y%3==2){
                 System.out.println("*---*---*---*"); 
+            
             }
 
 
-        }
-      
-
-        
-
-
-        
+        }        
     }
 
     public static void main(String[] args) {
