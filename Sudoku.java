@@ -50,4 +50,11 @@ public class Sudoku {
 
     }
 
+    public void setFeld(int x, int y ,int Zahl){
+        this.felder[x][y]=Zahl;
+    }
+
+
+
+
 }
